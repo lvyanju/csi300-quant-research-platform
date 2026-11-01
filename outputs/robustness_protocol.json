@@ -1,0 +1,33 @@
+{
+  "grid": [
+    [
+      80,
+      10
+    ],
+    [
+      125,
+      20
+    ],
+    [
+      200,
+      20
+    ]
+  ],
+  "seeds": [
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030
+  ],
+  "validation_best_by_mean_balanced_accuracy": {
+    "train_days": 80,
+    "predict_days": 10
+  },
+  "source_sha256": {
+    "index": "97df8f2d3122628aa266e5a64b6d489a4cb38260f94b53266ebe6b3a4625f3e1",
+    "etf": "cd0ed1914d3b0febe47f6b0cc58f2ad0233f77f53de7b335c87ba1b8efa76329"
+  },
+  "warning": "诊断性历史敏感性分析：后段数据此前已被查看；选出的窗口不能称为真正样本外最优。",
+  "rows": 30
+}

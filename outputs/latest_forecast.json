@@ -1,0 +1,28 @@
+{
+  "status": "ready",
+  "generated_at": "2026-10-31T09:29:50.335749+08:00",
+  "data_as_of": "2026-10-30",
+  "target": "沪深300下一交易日开盘至收盘方向",
+  "primary_model": "Logistic_C0.1",
+  "primary_version": "008e44fbe13d",
+  "index_sha256": "97df8f2d3122628aa266e5a64b6d489a4cb38260f94b53266ebe6b3a4625f3e1",
+  "etf_sha256": "cd0ed1914d3b0febe47f6b0cc58f2ad0233f77f53de7b335c87ba1b8efa76329",
+  "primary": {
+    "model": "Logistic_C0.1",
+    "up_probability": 0.5565278779670754,
+    "signal_up": true,
+    "direction": "上涨"
+  },
+  "experimental": {
+    "model": "STGP_RMO_125_20",
+    "signal_up": true,
+    "direction": "上涨",
+    "rule_id": "65e305e9aca0",
+    "block": 9,
+    "block_start": "2026-09-30",
+    "train_start": "2026-03-31",
+    "train_end": "2026-09-29",
+    "seed": 20261035
+  },
+  "note": "旧行情不会发布为当前预测。STGP仅为实验信号，不提供校准概率。"
+}

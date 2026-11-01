@@ -1,0 +1,12 @@
+{
+  "asset": "etf",
+  "name": "华泰柏瑞沪深300ETF",
+  "code": "sh510300",
+  "source": "https://quotes.sina.cn/cn/api/jsonp_v2.php/var%20_data=/CN_MarketDataService.getKLineData",
+  "price_basis": "unadjusted_exchange_price",
+  "start": "2023-07-03",
+  "end": "2026-10-30",
+  "downloaded_at_utc": "2026-10-31T01:31:06.613197+00:00",
+  "sha256": "cd0ed1914d3b0febe47f6b0cc58f2ad0233f77f53de7b335c87ba1b8efa76329",
+  "rows": 807
+}

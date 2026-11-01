@@ -1,0 +1,270 @@
+{
+  "id": "20261031T013736Z-2dbcf59b",
+  "created_at_utc": "2026-10-31T01:37:36.427591+00:00",
+  "target": "next_session_index_open_to_close_direction",
+  "config": {
+    "train_days": 80,
+    "predict_days": 40,
+    "population": 8,
+    "generations": 2,
+    "max_depth": 5,
+    "seed": 20261026,
+    "one_way_cost": 0.0005,
+    "features": [
+      "ar_1",
+      "intraday_1",
+      "vol_5"
+    ]
+  },
+  "methods": [
+    "RMO",
+    "FMO"
+  ],
+  "periods": {
+    "validation": [
+      "2026-01-01",
+      "2026-06-30"
+    ],
+    "retrospective": [
+      "2026-07-01",
+      "2026-10-23"
+    ]
+  },
+  "source_sha256": {
+    "index": "97df8f2d3122628aa266e5a64b6d489a4cb38260f94b53266ebe6b3a4625f3e1",
+    "etf": "cd0ed1914d3b0febe47f6b0cc58f2ad0233f77f53de7b335c87ba1b8efa76329"
+  },
+  "results": {
+    "RMO": {
+      "windows": 5,
+      "validation": {
+        "forecast": {
+          "n": 115,
+          "accuracy": 0.48695652173913045,
+          "balanced_accuracy": 0.4653799019607843,
+          "macro_f1": 0.4546258339361787,
+          "brier": 0.5130434782608696,
+          "up_rate": 0.5565217391304348,
+          "calibration": [
+            {
+              "forecast": 0.0,
+              "observed": 0.6111111111111112
+            },
+            {
+              "forecast": 1.0,
+              "observed": 0.5316455696202531
+            }
+          ]
+        },
+        "trading": {
+          "strategy": {
+            "days": 115,
+            "net_return": 0.036425361443099824,
+            "max_drawdown": -0.06556838617267291,
+            "sharpe_zero_rf": 0.603801296679728,
+            "trades": 49,
+            "turnover_notional": 48.288115999999995,
+            "total_cost": 2414.26385569,
+            "total_dividend": 0.0,
+            "final_equity": 103642.53614430998
+          },
+          "cost_2x": {
+            "days": 115,
+            "net_return": 0.011489082545359519,
+            "max_drawdown": -0.07206844967683457,
+            "sharpe_zero_rf": 0.24236140546353105,
+            "trades": 49,
+            "turnover_notional": 47.687526,
+            "total_cost": 4768.191745464,
+            "total_dividend": 0.0,
+            "final_equity": 101148.90825453596
+          },
+          "buy_and_hold": {
+            "days": 115,
+            "net_return": 0.05965245000000019,
+            "max_drawdown": -0.07437597441764776,
+            "sharpe_zero_rf": 0.8272816967999492,
+            "trades": 1,
+            "turnover_notional": 0.9990999999999999,
+            "total_cost": 49.95499999999999,
+            "total_dividend": 2533.8,
+            "final_equity": 105965.24500000002
+          },
+          "cash_return": 0.0,
+          "excess_vs_buy_hold": -0.023227088556900366
+        }
+      },
+      "retrospective": {
+        "forecast": {
+          "n": 77,
+          "accuracy": 0.5064935064935064,
+          "balanced_accuracy": 0.56875,
+          "macro_f1": 0.46683673469387754,
+          "brier": 0.4935064935064935,
+          "up_rate": 0.4155844155844156,
+          "calibration": [
+            {
+              "forecast": 0.8571428571428571,
+              "observed": 0.4155844155844156
+            }
+          ]
+        },
+        "trading": {
+          "strategy": {
+            "days": 77,
+            "net_return": -0.13234227665467935,
+            "max_drawdown": -0.1470392766546793,
+            "sharpe_zero_rf": -2.4080982416399994,
+            "trades": 19,
+            "turnover_notional": 17.033516,
+            "total_cost": 851.6276654680001,
+            "total_dividend": 0.0,
+            "final_equity": 86765.77233453207
+          },
+          "cost_2x": {
+            "days": 77,
+            "net_return": -0.14057307901367921,
+            "max_drawdown": -0.1551280790136792,
+            "sharpe_zero_rf": -2.5777384322356753,
+            "trades": 19,
+            "turnover_notional": 16.954996,
+            "total_cost": 1695.307901368,
+            "total_dividend": 0.0,
+            "final_equity": 85942.69209863208
+          },
+          "buy_and_hold": {
+            "days": 77,
+            "net_return": -0.16586739550000018,
+            "max_drawdown": -0.17999639550000002,
+            "sharpe_zero_rf": -3.0570192522346438,
+            "trades": 1,
+            "turnover_notional": 0.9967910000000001,
+            "total_cost": 49.83955,
+            "total_dividend": 0.0,
+            "final_equity": 83413.26044999999
+          },
+          "cash_return": 0.0,
+          "excess_vs_buy_hold": 0.033525118845320834
+        }
+      }
+    },
+    "FMO": {
+      "windows": 5,
+      "validation": {
+        "forecast": {
+          "n": 115,
+          "accuracy": 0.48695652173913045,
+          "balanced_accuracy": 0.4653799019607843,
+          "macro_f1": 0.4546258339361787,
+          "brier": 0.5130434782608696,
+          "up_rate": 0.5565217391304348,
+          "calibration": [
+            {
+              "forecast": 0.0,
+              "observed": 0.6111111111111112
+            },
+            {
+              "forecast": 1.0,
+              "observed": 0.5316455696202531
+            }
+          ]
+        },
+        "trading": {
+          "strategy": {
+            "days": 115,
+            "net_return": 0.036425361443099824,
+            "max_drawdown": -0.06556838617267291,
+            "sharpe_zero_rf": 0.603801296679728,
+            "trades": 49,
+            "turnover_notional": 48.288115999999995,
+            "total_cost": 2414.26385569,
+            "total_dividend": 0.0,
+            "final_equity": 103642.53614430998
+          },
+          "cost_2x": {
+            "days": 115,
+            "net_return": 0.011489082545359519,
+            "max_drawdown": -0.07206844967683457,
+            "sharpe_zero_rf": 0.24236140546353105,
+            "trades": 49,
+            "turnover_notional": 47.687526,
+            "total_cost": 4768.191745464,
+            "total_dividend": 0.0,
+            "final_equity": 101148.90825453596
+          },
+          "buy_and_hold": {
+            "days": 115,
+            "net_return": 0.05965245000000019,
+            "max_drawdown": -0.07437597441764776,
+            "sharpe_zero_rf": 0.8272816967999492,
+            "trades": 1,
+            "turnover_notional": 0.9990999999999999,
+            "total_cost": 49.95499999999999,
+            "total_dividend": 2533.8,
+            "final_equity": 105965.24500000002
+          },
+          "cash_return": 0.0,
+          "excess_vs_buy_hold": -0.023227088556900366
+        }
+      },
+      "retrospective": {
+        "forecast": {
+          "n": 77,
+          "accuracy": 0.4805194805194805,
+          "balanced_accuracy": 0.5284722222222222,
+          "macro_f1": 0.4600280504908836,
+          "brier": 0.5194805194805194,
+          "up_rate": 0.4155844155844156,
+          "calibration": [
+            {
+              "forecast": 0.0,
+              "observed": 0.35294117647058826
+            },
+            {
+              "forecast": 1.0,
+              "observed": 0.43333333333333335
+            }
+          ]
+        },
+        "trading": {
+          "strategy": {
+            "days": 77,
+            "net_return": -0.1325569074233396,
+            "max_drawdown": -0.14725390742333955,
+            "sharpe_zero_rf": -2.545972073150574,
+            "trades": 29,
+            "turnover_notional": 26.553349000000004,
+            "total_cost": 1327.590742334,
+            "total_dividend": 0.0,
+            "final_equity": 86744.30925766604
+          },
+          "cost_2x": {
+            "days": 77,
+            "net_return": -0.14507504899063994,
+            "max_drawdown": -0.15955904899063988,
+            "sharpe_zero_rf": -2.8172853653596746,
+            "trades": 29,
+            "turnover_notional": 26.371097000000002,
+            "total_cost": 2636.8048990639995,
+            "total_dividend": 0.0,
+            "final_equity": 85492.49510093601
+          },
+          "buy_and_hold": {
+            "days": 77,
+            "net_return": -0.16586739550000018,
+            "max_drawdown": -0.17999639550000002,
+            "sharpe_zero_rf": -3.0570192522346438,
+            "trades": 1,
+            "turnover_notional": 0.9967910000000001,
+            "total_cost": 49.83955,
+            "total_dividend": 0.0,
+            "final_equity": 83413.26044999999
+          },
+          "cash_return": 0.0,
+          "excess_vs_buy_hold": 0.033310488076660594
+        }
+      }
+    }
+  },
+  "warning": "两段行情均已被查看；动态试验属于回顾性研究，不构成新的前瞻或独立样本外验证。"
+}

@@ -1,0 +1,2 @@
+{"signal_date": "2026-10-30", "model": "Logistic_C0.1", "signal_up": true, "index_sha256": "97df8f2d3122628aa266e5a64b6d489a4cb38260f94b53266ebe6b3a4625f3e1", "up_probability": 0.5565278779670754, "version": "008e44fbe13d", "recorded_at": "2026-10-31T09:22:13.407022+08:00"}
+{"signal_date": "2026-10-30", "model": "STGP_RMO_125_20", "signal_up": true, "index_sha256": "97df8f2d3122628aa266e5a64b6d489a4cb38260f94b53266ebe6b3a4625f3e1", "rule_id": "65e305e9aca0", "seed": 20261035, "recorded_at": "2026-10-31T09:22:13.407022+08:00"}

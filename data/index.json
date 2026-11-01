@@ -1,0 +1,12 @@
+{
+  "asset": "index",
+  "name": "沪深300指数",
+  "code": "sh000300",
+  "source": "https://quotes.sina.cn/cn/api/jsonp_v2.php/var%20_data=/CN_MarketDataService.getKLineData",
+  "price_basis": "unadjusted_exchange_price",
+  "start": "2023-07-03",
+  "end": "2026-10-30",
+  "downloaded_at_utc": "2026-10-31T01:31:06.130130+00:00",
+  "sha256": "97df8f2d3122628aa266e5a64b6d489a4cb38260f94b53266ebe6b3a4625f3e1",
+  "rows": 807
+}
